@@ -1,0 +1,45 @@
+.flex-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+.flex-wrapper a {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: flex .4s;
+}
+
+.flex-wrapper .one {
+  background-image: url(img/sepatu.jpg);
+  background-color: red;
+}
+
+.flex-wrapper .two {
+  background-image: url(img/skull.jpg);
+  background-color: green;
+}
+
+.flex-wrapper .three {
+  background-image: url(img/droid.jpg);
+  background-color: steelblue;
+}
+
+.flex-wrapper .four {
+  background-image: url(img/272708.jpg);
+  background-color: orange;
+}
+
+.flex-wrapper .five {
+  background-image: url(img/kucing.jpg);
+  background-color: tomato;
+}
+
+.flex-wrapper a:hover {
+  flex: 3;
+}

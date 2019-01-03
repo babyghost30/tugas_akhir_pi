@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Perhitungan Dengan JS</title>
+</head>
+
+<body>
+<a href="../index.html"> BACK </a>
+	<table border="0px">
+		<tr>
+			<td>Nama</td>
+			<td> : </td>
+			<td>Muhammad Aziz Setiyalaksono</td>
+		</tr>
+		<tr>
+			<td>Nomor Induk Mahasiswa</td>
+			<td> : </td>
+			<td>A11.2014.08450</td>
+		</tr>
+		<tr>
+			<td>Mata Kuliah</td>
+			<td> : </td>
+			<td>Pemograman Web</td>
+		</tr>
+		<tr>
+			<td>Kelompok</td>
+			<td> : </td>
+			<td>A11.4320</td>
+		</tr>
+	</table>
+	<p>Menghitung 2 Bilangan</p>
+	<button onclick="Func_Hitung()">Mulai Menghitung!</button>
+	<script type="text/javascript">
+		function Func_Hitung(){
+			var angka1 = prompt("Masukan angka pertama : ", "");
+			var angka2 = prompt("Masukan angka kedua : ","");
+			var hasil = parseInt(angka1) + parseInt(angka2);
+			if(confirm("Apakah ingin melanjutkannya?")){
+				if((angka1 != null) && (angka2 != null)){
+					alert("Hasil penjumlahan dari "+ angka1 + " + " + angka2 + " adalah "+ hasil);	
+					Func_Hitung();
+				}else
+					alert("Somthing Wrong!");
+		}else
+			Func_Hitung();
+	}
+	</script>
+</body>
+</html>
